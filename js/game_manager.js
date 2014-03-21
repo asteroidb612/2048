@@ -105,7 +105,7 @@ GameManager.prototype.move = function (direction) {
   var self = this;
 
   if (this.isGameTerminated()) return; // Don't do anything if the game's over
-
+  if (self.disabled) return;
   var cell, tile;
 
   var vector     = this.getVector(direction);
@@ -160,6 +160,14 @@ GameManager.prototype.move = function (direction) {
     }
 
     this.actuate();
+
+    document.querySelector(".game-container").classList.add("game-disabled");
+    self.disabled = true;
+    setTimeout(function() {
+    document.querySelector(".game-container").classList.remove("game-disabled");
+      self.disabled = false;
+    }, 2000);
+
   }
 };
 

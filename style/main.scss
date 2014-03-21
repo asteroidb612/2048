@@ -249,6 +249,9 @@ hr {
     position: absolute;
     z-index: 1;
   }
+  .game-disabled {
+    border-right: 3px solid red;
+  }
 
   .grid-row {
     margin-bottom: $grid-spacing;
