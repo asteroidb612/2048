@@ -145,6 +145,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  border: 1px solid #bbada0;
   background: #bbada0;
   border-radius: 6px;
   width: 500px;
@@ -203,7 +204,7 @@ hr {
   z-index: 1; }
 
 .game-disabled {
-  border-right: 3px solid red; }
+  border: 1px solid red; }
 
 .grid-row {
   margin-bottom: 15px; }
@@ -514,6 +515,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    border: 1px solid #bbada0;
     background: #bbada0;
     border-radius: 6px;
     width: 280px;
@@ -572,7 +574,7 @@ hr {
     z-index: 1; }
 
   .game-disabled {
-    border-right: 3px solid red; }
+    border: 1px solid red; }
 
   .grid-row {
     margin-bottom: 10px; }
